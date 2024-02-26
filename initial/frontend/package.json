@@ -8,8 +8,18 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.6.7",
+    "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "font-awesome": "^4.7.0",
+    "highlightjs": "^9.16.2",
+    "liquor-tree": "^0.2.70",
+    "vue": "^3.2.13",
+    "vue-gravatar": "^1.4.1",
+    "vue-mq": "^1.0.1",
+    "vue-router": "^4.3.0",
+    "vue-toasted": "^1.1.28",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
