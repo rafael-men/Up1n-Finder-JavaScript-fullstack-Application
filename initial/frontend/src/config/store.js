@@ -1,21 +1,21 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+ 
 Vue.use(Vuex)
-
+ 
 export default new Vuex.Store({
-    state:{
-        ismenuVisible:true 
+    state: {
+        isMenuVisible: true
     },
-    mutations : {
-        toggleMenu(state,isVisible) {
-            if(isVisible === undefined) {
-                state.ismenuVisible = !state.ismenuVisible
+    mutations: {
+        toggleMenu(state, isVisible){
+            if(isVisible === undefined){
+                state.isMenuVisible = !state.isMenuVisible
+            } else {
+                state.isMenuVisible = isVisible
             }
-            else {
-                state.ismenuVisible = isVisible
-            }
-            console.log('toggleMenu = ' + state.ismenuVisible)
+            
+            console.log('toggleMenu = ' + state.isMenuVisible)
         }
     }
 })
