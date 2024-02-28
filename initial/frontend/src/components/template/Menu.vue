@@ -1,11 +1,12 @@
 <template>
-  <aside class="menu" ></aside>
+  <aside class="menu" v-show="Visible"></aside>
 </template>
 
 <script>
-
+import { mapState } from 'vuex'
 export default {
-    name:'AppMenu'
+    name:'AppMenu',
+    computed: mapState(['Visible'])
 }
 </script>
 

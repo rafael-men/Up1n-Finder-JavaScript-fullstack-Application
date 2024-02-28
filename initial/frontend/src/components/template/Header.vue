@@ -1,22 +1,29 @@
 <template>
   <header class="header">
-        <a class="toggle" @click="toggleMenu" v-if="!hideToggle">
+        <a class="toggle" @click="toggleMenu">
             <i class="fa fa-lg" :class="icon"></i>
         </a>
-        <h1 class="title">{{title}}</h1>
-    </header>
+        <div class="title">
+        <router-link to="/"><img src="@/assets/image.png" class="logo"></router-link>
+        </div>
+        <UserDropdown v-if="!hideUserDropdown"/>
+    </header> 
 </template>
 
 <script>
+import UserDropdown from './UserDropdown.vue'
+
 export default {
-    name: "AppHeader",
+    name: 'AppHeader',
+    components:{UserDropdown},
     props: {
         title: String,
         hideToggle: Boolean,
+        hideUserDropdown:Boolean
     },
     computed: {
         icon() {
-            return  "fa-angle-left" 
+            return this.$store.state.Visible ? "fa-angle-left" : "fa-angle-right"
         }
     },
     methods: {
@@ -30,35 +37,22 @@ export default {
 <style>
 .header {
     grid-area: header;
-    background: linear-gradient(rgb(25, 16, 59),rgb(2, 2, 2));
+    background-color: rgb(26, 26, 26);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.title {
-        font-size: 1.2rem;
-        color: #fff;
-        font-weight: 100;
-        flex-grow: 1;
+.logo {
+        width:300px;
+        height: 60px;
         text-align: center;
-    }
-
-    .title a {
-        color: #FFF;
-        text-decoration: none;
-    }
-
-    .title a:hover {
-        color: #FFF;
-        text-decoration: none;
-    }
+}
 
     header.header > a.toggle {
         width: 60px;
         height: 100%;
         color: #fff;
-        justify-self: flex-start;
         text-decoration: none;
 
         display: flex;
@@ -66,8 +60,4 @@ export default {
         align-items: center;
     }
 
-    header.header > a.toggle:hover {
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.2);
-    }
 </style>
