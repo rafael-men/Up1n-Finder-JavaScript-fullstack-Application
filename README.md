@@ -1,22 +1,4 @@
 
-   <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            color: #495057;
-            margin: 20px;
-        }
-h1 {
-            color: #007bff;
-        }
-
-  p {
-            margin-bottom: 15px;
-        }
-
-
-  </style>
-</head>
 <body>
 
   <h1>Knowledge Base</h1>
