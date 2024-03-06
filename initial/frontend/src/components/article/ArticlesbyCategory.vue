@@ -19,11 +19,11 @@
 import { baseApiUrl } from '@/global'
 import axios from 'axios'
 import PageTitle from '../template/PageTitle'
-import ArticleItem from './ArticleItem'
+
 
 export default {
     name: 'ArticlesByCategory',
-    components: { PageTitle, ArticleItem },
+    components: { PageTitle },
     data: function() {
         return {
             category: {},
