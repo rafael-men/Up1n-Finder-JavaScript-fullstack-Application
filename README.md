@@ -1,7 +1,7 @@
 
 <body>
 
-  <h1>Knowledge Base</h1>
+  <h1>Up1n Finder</h1>
 
  # Aplicação Fullstack com Vue.js e Node.js
 
