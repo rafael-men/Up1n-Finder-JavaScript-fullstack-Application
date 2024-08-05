@@ -5,7 +5,7 @@
 
  # Aplicação Fullstack com Vue.js e Node.js
 
-Este é um projeto de exemplo de uma aplicação fullstack desenvolvida com Vue.js para o frontend e Node.js para o backend.
+Este é um projeto de uma aplicação fullstack desenvolvida com Vue.js para o frontend e Node.js para o backend.
 
 ## Visão Geral
 
