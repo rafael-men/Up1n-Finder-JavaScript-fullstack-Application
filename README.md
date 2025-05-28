@@ -51,9 +51,9 @@ A aplicação oferece as seguintes funcionalidades:
   ```
 - Inicie o servidor backend:
   
-``` bash
+  ``` bash
   npm start
-```
+  ```
 
 4. Configure e inicie o frontend:
 5. Navegue até o diretório raiz.
@@ -65,9 +65,9 @@ A aplicação oferece as seguintes funcionalidades:
   ```
 
 - Inicie o Servidor Frontend:
-```bash
-npm start
-```
+  ```bash
+  npm run serve
+  ```
 
 A aplicação estará disponível em http://localhost:8080.
 
