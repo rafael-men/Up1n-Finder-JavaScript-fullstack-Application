@@ -38,23 +38,36 @@ A aplicação oferece as seguintes funcionalidades:
 ## Configuração do Ambiente de Desenvolvimento
 
 1. Clone este repositório
-2. 
-3. Configure e inicie o backend:
+2. Configure e inicie o backend:
+- Navegue até o diretório do backend:
+     
+  ```bash
+   cd backend
+  ```
+- Instale as dependências do Node.js
 
-   a. Navegue até o diretório do backend:
-
-cd backend
-
-   b. Instale as dependências do Node.js
-
-   c. Inicie o servidor backend:
-
-   npm start
+  ```bash
+  npm i
+  ```
+- Inicie o servidor backend:
+  
+``` bash
+  npm start
+```
 
 4. Configure e inicie o frontend:
+5. Navegue até o diretório raiz.
 
-    a.navegue até o diretório
+- Instale as dependências do Node.js
 
+  ```bash
+  npm i
+  ```
+
+- Inicie o Servidor Frontend:
+```bash
+npm start
+```
 
 A aplicação estará disponível em http://localhost:8080.
 
